@@ -12,3 +12,10 @@ Dans ce dossier, j'ai déposé :
     - Mise à jour d'un pokemon
     - Suppression d'un pokemon
 
+## Partie Developpement
+
+### Pokedex
+Le logiciel Pokedex est codé sous IntelliJ, en JavaFX, avec Gradle pour compiler
+
+### Base de données
+La base de données sera hébergée sur un serveur MariaDB (compatible avec mySQL).
