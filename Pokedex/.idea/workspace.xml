@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c77b3e74-eba9-43c1-a482-52991ea597e9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +79,8 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "models__creation",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/socrate/IdeaProjects/LogiNotes",
-    "project.structure.last.edited": "Problems",
+    "last_opened_file_path": "/home/socrate/Documents/Projets/CESI_project-Pokedex/Pokedex/driver/mariadb-java-client-3.5.7.jar",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
@@ -93,7 +96,7 @@
       <workItem from="1777387070351" duration="631000" />
       <workItem from="1777387728481" duration="169000" />
       <workItem from="1777392507895" duration="194000" />
-      <workItem from="1777444300409" duration="1481000" />
+      <workItem from="1777444300409" duration="2361000" />
     </task>
     <servers />
   </component>
