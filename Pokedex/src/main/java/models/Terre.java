@@ -1,6 +1,7 @@
 package models;
 
 public class Terre extends Type{
+    //Stats imposées par le Type Terre
     public Terre() {
         this.atk_base = 8;
         this.def_base = 18;
