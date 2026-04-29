@@ -1,0 +1,43 @@
+USE Pokedex;
+CREATE TABLE IF NOT EXISTS Attaque(
+   id INT,
+   nom VARCHAR(50)  NOT NULL,
+   Degats INT,
+   Effet VARCHAR(50) ,
+   PRIMARY KEY(id),
+   UNIQUE(nom)
+);
+
+CREATE TABLE IF NOT EXISTS Type(
+   id INT(50) ,
+   nom VARCHAR(50)  NOT NULL,
+   atk_base INT NOT NULL,
+   def_base INT NOT NULL,
+   vit_base INT NOT NULL,
+   spe_base INT NOT NULL,
+   PRIMARY KEY(id),
+   UNIQUE(nom)
+);
+
+CREATE TABLE IF NOT EXISTS Pokemon(
+   id INT,
+   nom VARCHAR(50)  NOT NULL,
+   PdV INT NOT NULL,
+   Xp INT,
+   ATK INT NOT NULL,
+   DEF INT NOT NULL,
+   VIT INT,
+   SPE INT,
+   id_1 VARCHAR(50)  NOT NULL,
+   PRIMARY KEY(id),
+   UNIQUE(nom),
+   FOREIGN KEY(id_1) REFERENCES Type(id)
+);
+
+CREATE TABLE IF NOT EXISTS Connaissance(
+   id INT,
+   id_1 VARCHAR(50) ,
+   PRIMARY KEY(id, id_1),
+   FOREIGN KEY(id) REFERENCES Pokemon(id),
+   FOREIGN KEY(id_1) REFERENCES Attaque(id)
+);
