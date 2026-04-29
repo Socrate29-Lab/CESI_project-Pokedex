@@ -14,17 +14,12 @@ public class Pokemon {
     //Constructor vide
     public Pokemon(){}
 
-    //Constructor avec toutes les données
-    public Pokemon(String nom, int niveau, int pdv, int xp, Type type, List<Attaque> attaques) {
+    //Constructor pour afficher les données de la DB
+    public Pokemon(int id, String nom, int pdV, int xp, int idType) {
+        this.id = id;
         this.nom = nom;
-        this.niveau = niveau;
-        this.pdv = pdv;
+        this.pdv = pdV;
         this.xp = xp;
-        this.type = type;
-        this.attaques = attaques;
-    }
-
-    public Pokemon(int id, String nom, int pdV, int xp) {
     }
 
     //getters pour afficher les différentes informations
@@ -35,4 +30,15 @@ public class Pokemon {
     public Type getType() {return type;}
     public List<Attaque> getAttaques() {return attaques;}
 
+    //Fonction pour associer le type au pokemon grace à l'ID du type
+    private Type getTypeById(int idType) {
+        switch(idType){
+            case 1: return new Eclair();
+            case 2: return new Feu();
+            case 3: return new Terre();
+            case 4: return new Vent();
+            case 5: return new Eau();
+            default: return null;
+        }
+    }
 }

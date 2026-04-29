@@ -24,15 +24,13 @@ CREATE TABLE IF NOT EXISTS Pokemon(
    nom VARCHAR(50)  NOT NULL,
    PdV INT NOT NULL,
    Xp INT,
-   ATK INT NOT NULL,
-   DEF INT NOT NULL,
-   VIT INT,
-   SPE INT,
    id_1 VARCHAR(50)  NOT NULL,
    PRIMARY KEY(id),
    UNIQUE(nom),
    FOREIGN KEY(id_1) REFERENCES Type(id)
 );
+
+ALTER TABLE Pokemon RENAME COLUMN id_1 TO id_type;
 
 CREATE TABLE IF NOT EXISTS Connaissance(
    id INT,

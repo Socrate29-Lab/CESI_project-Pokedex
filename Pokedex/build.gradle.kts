@@ -39,6 +39,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
     implementation("io.github.cdimascio:dotenv-java:3.0.0")
+    implementation("org.mariadb.jdbc:mariadb-java-client:3.3.3")
 }
 
 tasks.withType<Test> {

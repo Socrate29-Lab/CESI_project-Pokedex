@@ -11,5 +11,4 @@ public abstract class Type {
     public int getDef_base() {return def_base;}
     public int getVit_base() {return vit_base;}
     public int getSpe_base() {return spe_base;}
-
 }

@@ -1,7 +1,6 @@
 package API;
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import io.github.cdimascio.dotenv.Dotenv;
@@ -11,16 +10,17 @@ public class ConnexionDB {
     private Connection conn = null;
 
     //Constructor de la connexion
-    public ConnexionDB(){
-        //Pour utiliser le .env
+    public ConnexionDB() {
         final Dotenv dotenv = Dotenv.load();
+        try {
+            String url = dotenv.get("DB_URL");
+            String user = dotenv.get("DB_USER");
+            String password = dotenv.get("DB_PASSWORD");
 
-        String url = dotenv.get("DB_URL");
-        String user = dotenv.get("DB_USER");
-        String password = dotenv.get("DB_PASSWORD");
-        try{
+            Class.forName("org.mariadb.jdbc.Driver");
             conn = DriverManager.getConnection(url, user, password);
-        } catch (Exception e){
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -33,11 +33,12 @@ public class ConnexionDB {
             stmt = conn.createStatement();
             rs = stmt.executeQuery("SELECT * FROM Pokemon");
             while (rs.next()) {
-                pokedex = Collections.singletonList(new Pokemon(
+                pokedex.add(new Pokemon(
                         rs.getInt("id"),
                         rs.getString("nom"),
                         rs.getInt("PdV"),
-                        rs.getInt("Xp")
+                        rs.getInt("Xp"),
+                        rs.getInt("id_type")
                 ));
                 i++;
             }
