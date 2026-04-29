@@ -1,6 +1,7 @@
 package models;
 
 public class Vent extends Type{
+    //Stats imposées par le Type Eau
     public Vent() {
         this.atk_base = 6;
         this.def_base = 8;
