@@ -15,9 +15,10 @@ public class Pokemon {
     public Pokemon(){}
 
     //Constructor pour afficher les données de la DB
-    public Pokemon(int id, String nom, int pdV, int xp, Type type) {
+    public Pokemon(int id, String nom,int niveau, int pdV, int xp, Type type) {
         this.id = id;
         this.nom = nom;
+        this.niveau = niveau;
         this.pdv = pdV;
         this.xp = xp;
         this.type = type;

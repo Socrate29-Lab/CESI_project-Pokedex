@@ -32,13 +32,14 @@ public class ConnexionDB {
         try {
             stmt = conn.createStatement();
             rs = stmt.executeQuery(
-                    "SELECT Pokemon.id, Pokemon.nom, Pokemon.PdV, Pokemon.Xp, Type.nom AS nomType " +
+                    "SELECT Pokemon.id, Pokemon.nom, Pokemon.Niveau, Pokemon.PdV, Pokemon.Xp, Type.nom AS nomType " +
                             "FROM Pokemon JOIN Type ON Pokemon.id_type = Type.id"
             );
             while (rs.next()) {
                 pokedex.add(new Pokemon(
                         rs.getInt("id"),
                         rs.getString("nom"),
+                        rs.getInt("Niveau"),
                         rs.getInt("PdV"),
                         rs.getInt("Xp"),
                         getTypeByNom(rs.getString("nomType"))
