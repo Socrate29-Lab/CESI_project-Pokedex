@@ -7,7 +7,13 @@
     <list default="true" id="c77b3e74-eba9-43c1-a482-52991ea597e9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Attaque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Attaque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Eau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Eau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Eclair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Eclair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Feu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Feu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Terre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Terre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Vent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Vent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

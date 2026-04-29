@@ -21,5 +21,9 @@ public class Attaque {
         this.degats = degats;
         this.effet = effet;
     }
+    //getters pour afficher les différentes informations
+    public String getNom() {return nom;}
+    public int degats() {return degats;}
+    public String effet() {return effet;}
 }
 

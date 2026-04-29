@@ -23,7 +23,7 @@ public class Pokemon {
         this.type = type;
         this.attaques = attaques;
     }
-
+    //getters pour afficher les différentes informations
     public int getId() {return id;}
     public String getNom() {return nom;}
     public int getNiveau() {return niveau;}
