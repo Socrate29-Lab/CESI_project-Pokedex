@@ -1,0 +1,6 @@
+"id","nom","atk_base","def_base","vit_base","spe_base"
+"1",Eclair,12,6,14,18
+"2",Feu,12,4,6,12
+"3",Terre,8,18,3,5
+"4",Vent,6,8,16,16
+"5",Eau,4,14,10,8
