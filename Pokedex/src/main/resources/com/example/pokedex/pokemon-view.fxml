@@ -8,6 +8,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 
+<?import javafx.scene.control.TextField?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.example.pokedex.PokedexController">
     <padding>
@@ -17,6 +18,7 @@
     <Label fx:id="loadText"/>
     <Button text="Charger les données depuis mariaDB" onAction="#onLoadDBButtonClick"/>
     <Button text="Supprimer un pokemon" onAction="#onDelButtonClick"/>
+    <TextField text ="Barre de recherche" />
     <TableView fx:id="pokedex">
         <columns>
             <TableColumn fx:id="colNom" text="Nom"/>
