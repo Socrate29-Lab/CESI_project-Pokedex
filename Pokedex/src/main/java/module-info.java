@@ -8,5 +8,6 @@ module com.example.pokedex {
 
 
     opens com.example.pokedex to javafx.fxml;
+    opens models to javafx.base;
     exports com.example.pokedex;
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.github.cdimascio.dotenv.Dotenv;
-import models.Pokemon;
+import models.*;
 
 public class ConnexionDB {
     private Connection conn = null;
@@ -31,14 +31,17 @@ public class ConnexionDB {
         int i = 0;
         try {
             stmt = conn.createStatement();
-            rs = stmt.executeQuery("SELECT * FROM Pokemon");
+            rs = stmt.executeQuery(
+                    "SELECT Pokemon.id, Pokemon.nom, Pokemon.PdV, Pokemon.Xp, Type.nom AS nomType " +
+                            "FROM Pokemon JOIN Type ON Pokemon.id_type = Type.id"
+            );
             while (rs.next()) {
                 pokedex.add(new Pokemon(
                         rs.getInt("id"),
                         rs.getString("nom"),
                         rs.getInt("PdV"),
                         rs.getInt("Xp"),
-                        rs.getInt("id_type")
+                        getTypeByNom(rs.getString("nomType"))
                 ));
                 i++;
             }
@@ -53,5 +56,16 @@ public class ConnexionDB {
             }
         }
         return pokedex;
+    }
+    //Fonction pour afficher en String le nom du type du pokemon
+    private Type getTypeByNom(String nomType) {
+        switch (nomType.toLowerCase()) {
+            case "feu": return new Feu();
+            case "eau": return new Eau();
+            case "eclair": return new Eclair();
+            case "terre": return new Terre();
+            case "vent": return new Vent();
+            default: return null;
+        }
     }
 }

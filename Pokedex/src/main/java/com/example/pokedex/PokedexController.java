@@ -1,6 +1,7 @@
 package com.example.pokedex;
 
 import API.ConnexionDB;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -24,6 +25,8 @@ public class PokedexController {
     private TableColumn<Pokemon, Integer> colPdV;
     @FXML
     private TableColumn<Pokemon, Integer> colXp;
+    @FXML
+    private TableColumn<Pokemon, String> colType;
 
 
     @FXML
@@ -32,6 +35,9 @@ public class PokedexController {
         colNiveau.setCellValueFactory(new PropertyValueFactory<>("niveau"));
         colPdV.setCellValueFactory(new PropertyValueFactory<>("pdv"));
         colXp.setCellValueFactory(new PropertyValueFactory<>("xp"));
+        colType.setCellValueFactory(cellData ->
+                new SimpleStringProperty(cellData.getValue().getType().getClass().getSimpleName())
+        );
 
         ConnexionDB db = new ConnexionDB();
         List<Pokemon> liste = db.GETDB_Pokedex();
