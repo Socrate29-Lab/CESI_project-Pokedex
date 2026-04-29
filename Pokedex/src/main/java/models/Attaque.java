@@ -5,4 +5,9 @@ public class Attaque {
     private int degats;
     private String effet;
     private Pokemon[] pokemons;
+
+    public Attaque(){}
+
+    public Attaque
 }
+
