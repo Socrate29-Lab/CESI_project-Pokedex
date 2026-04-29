@@ -35,6 +35,7 @@ public class PokedexController {
         colNiveau.setCellValueFactory(new PropertyValueFactory<>("niveau"));
         colPdV.setCellValueFactory(new PropertyValueFactory<>("pdv"));
         colXp.setCellValueFactory(new PropertyValueFactory<>("xp"));
+        //Comme j'appelle directement le nom de la Classe, il faut le trasnformer en simple nom
         colType.setCellValueFactory(cellData ->
                 new SimpleStringProperty(cellData.getValue().getType().getClass().getSimpleName())
         );
@@ -44,5 +45,10 @@ public class PokedexController {
 
         pokedex.setItems(FXCollections.observableArrayList(liste));
         loadText.setText("Pokédex chargé : " + liste.size() + " Pokémon");
+    }
+
+    @FXML
+    protected void onDelButtonClick() {
+
     }
 }

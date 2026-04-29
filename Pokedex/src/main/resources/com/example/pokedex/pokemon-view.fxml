@@ -16,6 +16,7 @@
 
     <Label fx:id="loadText"/>
     <Button text="Charger les données depuis mariaDB" onAction="#onLoadDBButtonClick"/>
+    <Button text="Supprimer un pokemon" onAction="#onDelButtonClick"/>
     <TableView fx:id="pokedex">
         <columns>
             <TableColumn fx:id="colNom" text="Nom"/>

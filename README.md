@@ -16,6 +16,8 @@ Dans ce dossier, j'ai déposé :
 
 ### Pokedex
 Le logiciel Pokedex est codé sous IntelliJ, en JavaFX, avec Gradle pour compiler
+La connexion avec la base de données est effective, il faut simplement créer son fichier **.env** en suivant l'exemple du **.exempleenv**
+L'application est pour le moment capable d'afficher la liste des pokemon (Nom, Niveau, Points de vie, Experience, Type) quand on clique sur le bouton pour charger les données.
 
 ### Base de données
 La base de données sera hébergée sur un serveur MariaDB (compatible avec mySQL).
@@ -26,3 +28,5 @@ Pour mettre en place la base de données :
 - Adapter la ligne "USE" avec le nom de votre DB à la place.
 - Lancer le script SQL
 - La DB est créée !
+
+
