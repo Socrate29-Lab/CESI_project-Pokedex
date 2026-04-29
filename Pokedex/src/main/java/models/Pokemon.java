@@ -3,6 +3,7 @@ package models;
 import java.util.List;
 
 public class Pokemon {
+    private int id;
     private String nom;
     private int niveau;
     private int pdv;
@@ -22,6 +23,10 @@ public class Pokemon {
         this.type = type;
         this.attaques = attaques;
     }
+
+    public Pokemon(int id, String nom, int pdV, int xp) {
+    }
+
     //getters pour afficher les différentes informations
     public String getNom() {return nom;}
     public int getNiveau() {return niveau;}
