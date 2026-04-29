@@ -29,4 +29,4 @@ Pour mettre en place la base de données :
 - Lancer le script SQL
 - La DB est créée !
 
-
+Les fichiers .CSV sont diponibles pour les 3 tables avec des données dedans.
