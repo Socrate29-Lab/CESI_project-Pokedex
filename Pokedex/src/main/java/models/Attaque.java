@@ -6,8 +6,20 @@ public class Attaque {
     private String effet;
     private Pokemon[] pokemons;
 
+    //Constructor vide
     public Attaque(){}
 
-    public Attaque
+    //Constructor pour une attaque sans effet supplémentaire
+    public Attaque(String nom, int degats){
+        this.nom = nom;
+        this.degats = degats;
+    }
+
+    //Constructor pour une attaque avec effet supplémentaire
+    public Attaque(String nom, int degats, String effet){
+        this.nom = nom;
+        this.degats = degats;
+        this.effet = effet;
+    }
 }
 
